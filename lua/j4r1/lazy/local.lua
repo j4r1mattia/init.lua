@@ -1,8 +1,9 @@
 
-local local_plugins = {
+return {
     {
-        "harpoon",
-        dir = "~/personal/harpoon",
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        dependencies = { "nvim-lua/plenary.nvim" },
         config = function()
             local harpoon = require("harpoon")
 
@@ -22,7 +23,7 @@ local local_plugins = {
         end
     },
     {
-        "vim-apm", dir = "~/personal/vim-apm",
+        "ThePrimeagen/vim-apm",
         config = function()
             --[[
             local apm = require("vim-apm")
@@ -33,10 +34,7 @@ local local_plugins = {
         end
     },
     {
-        "vim-with-me", dir = "~/personal/vim-with-me",
+        "ThePrimeagen/vim-with-me",
         config = function() end
     },
 }
-
-return local_plugins
-
