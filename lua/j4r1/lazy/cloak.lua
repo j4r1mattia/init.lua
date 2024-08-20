@@ -1,7 +1,6 @@
 return {
     "laytan/cloak.nvim",
-    config = function()
-        require("cloak").setup({
+    opts = {
             enabled = true,
             cloak_character = "*",
             -- The applied highlight group (colors) on the cloaking, see `:h highlight`.
@@ -21,6 +20,5 @@ return {
                     cloak_pattern = "=.+"
                 },
             },
-        })
-    end
+        }
 }

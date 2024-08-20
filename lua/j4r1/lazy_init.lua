@@ -13,5 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     spec = "j4r1.lazy",
-    change_detection = { notify = false }
+    change_detection = { notify = false },
+
+    checker = { enable = true },
 })
